@@ -3,45 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>釜山 2026/8/15–8/19 行程規劃</title>
+<title>釜山 2026/8/15–8/19 行程規劃 v2</title>
 <style>
   :root{
-    --bg:#f7f8fb; --card:#ffffff; --ink:#1f2937; --muted:#6b7280;
-    --line:#e5e7eb; --accent:#0f766e; --accent2:#2563eb; --warn:#b45309;
+    --bg:#f6f8fb; --card:#fff; --ink:#172033; --muted:#64748b;
+    --line:#e2e8f0; --accent:#0f766e; --blue:#2563eb; --orange:#ea580c;
+    --red:#dc2626; --green:#16a34a; --soft:#f8fafc;
   }
   *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",Arial,sans-serif;line-height:1.68}
   header{background:linear-gradient(135deg,#0f766e,#2563eb);color:white;padding:28px 18px}
-  header .wrap{max-width:1100px;margin:0 auto}
-  h1{margin:0 0 8px;font-size:28px;line-height:1.2}
-  h2{font-size:22px;margin:28px 0 12px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+  h1{font-size:28px;line-height:1.25;margin:0 0 8px}
+  h2{font-size:22px;margin:30px 0 12px}
   h3{font-size:18px;margin:18px 0 10px}
   p{margin:8px 0}
-  .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+  a{color:#0f766e;text-decoration:none;font-weight:650}
+  a:hover{text-decoration:underline}
   .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
   .chip{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:4px 10px;font-size:14px}
-  .note{background:#fff7ed;border-left:5px solid #f59e0b;padding:12px 14px;border-radius:10px;margin:16px 0}
-  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:14px 0;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+  .note{background:#fff7ed;border-left:5px solid #f59e0b;padding:12px 14px;border-radius:12px;margin:16px 0}
+  .ok{background:#f0fdf4;border-left:5px solid #22c55e;padding:12px 14px;border-radius:12px;margin:16px 0}
   .day{border-left:6px solid var(--accent)}
-  .day:nth-of-type(2n){border-left-color:var(--accent2)}
-  table{width:100%;border-collapse:separate;border-spacing:0;margin:10px 0;background:white;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .day.blue{border-left-color:var(--blue)}
+  .day.orange{border-left-color:var(--orange)}
+  table{width:100%;border-collapse:separate;border-spacing:0;background:white;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:10px 0}
   th,td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{background:#f1f5f9;text-align:left;font-weight:700;white-space:nowrap}
+  th{background:#f1f5f9;text-align:left;font-weight:800;white-space:nowrap}
   tr:last-child td{border-bottom:none}
-  .tag{display:inline-block;border-radius:999px;padding:2px 8px;font-size:12px;font-weight:700;margin-right:5px}
+  .tag{display:inline-block;border-radius:999px;padding:2px 8px;font-size:12px;font-weight:800;margin:0 5px 3px 0;white-space:nowrap}
   .food{background:#fee2e2;color:#991b1b}
   .sight{background:#dbeafe;color:#1e40af}
+  .book{background:#ffedd5;color:#9a3412}
   .open{background:#dcfce7;color:#166534}
-  .move{color:#475569;font-size:14px}
-  a{color:#0f766e;text-decoration:none}
-  a:hover{text-decoration:underline}
+  .move{font-size:14px;color:#475569}
   .muted{color:var(--muted);font-size:14px}
-  .important{font-weight:700;color:#b45309}
-  footer{padding:28px 0 42px;color:var(--muted);font-size:13px}
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .source{font-size:13px;color:#64748b}
+  .btn{display:inline-block;background:#0f766e;color:white;border-radius:12px;padding:8px 12px;margin:4px 8px 4px 0}
+  .btn:hover{text-decoration:none;background:#115e59}
+  footer{padding:32px 0 44px;color:#64748b;font-size:13px}
   @media(max-width:760px){
+    h1{font-size:23px}
     .grid{grid-template-columns:1fr}
-    h1{font-size:24px}
     table{font-size:14px}
     th,td{padding:9px 8px}
   }
@@ -50,101 +55,140 @@
 <body>
 <header>
   <div class="wrap">
-    <h1>釜山自由行規劃｜2026/8/15（六）– 8/19（三）</h1>
+    <h1>釜山自由行｜2026/8/15（六）– 8/19（三）v3</h1>
     <p>住宿：光安 KCC Switchen Harbor View 公寓（釜山市水營區民樂水邊路 49）</p>
     <div class="chips">
-      <span class="chip">以廣安里為住宿核心</span>
-      <span class="chip">餐廳 A / 景點設施 B 分類</span>
-      <span class="chip">主食排午餐或晚餐</span>
+      <span class="chip">已加入機張帝王蟹</span>
+      <span class="chip">ClubD Oasis 改排 8/18 下午</span>
+      <span class="chip">DIART Coffee 改排膠囊列車後</span>
+      <span class="chip">新增 All Sunday Bagel 早餐</span><span class="chip">豬肉湯飯改為安木</span>
       <span class="chip">保留新增景點空間</span>
     </div>
   </div>
 </header>
 
 <main class="wrap">
+  <section class="ok">
+    <strong>本版調整結論：</strong>機張帝王蟹可加入 8/16，因為 Skyline Luge 在機張/Osiria 方向，和機張蟹市場同一天最順。為了讓 DIART Coffee 排在膠囊列車之後，建議膠囊列車改訂「尾浦 Mipo → 青沙浦 Cheongsapo」，抵達青沙浦後再去 DIART Coffee。
+  </section>
+
   <section class="note">
-    <strong>重要提醒：</strong>以下交通時間為實務估算，實際請出發前用 Naver Map / Kakao Map / Google Maps 再確認。釜山夏天熱門景點（膠囊列車、ClubD Oasis、Luge）營業時間可能依天氣、人潮或官方公告調整。
+    <strong>交通提醒：</strong>以下交通時間是實務估算，實際出發前請用 Naver Map / Kakao Map 再確認。夏天熱門景點營業時間與票券狀態可能變動。
   </section>
 
   <section>
-    <h2>一、地點資料整理</h2>
+    <h2>一、重要訂票日期與網址</h2>
     <table>
-      <thead><tr><th>類別</th><th>地點</th><th>營業時間 / 預約</th><th>安排重點</th></tr></thead>
+      <thead><tr><th>項目</th><th>預計日期</th><th>建議訂票時間</th><th>網址 / 備註</th></tr></thead>
       <tbody>
-        <tr><td><span class="tag food">A 餐廳</span></td><td>Nasari Sigdang 廣安里</td><td>約 11:00 開始營業；CatchTable 可查座位/預約。</td><td>靠近住宿，適合第一天晚餐。</td></tr>
-        <tr><td><span class="tag food">A 餐廳</span></td><td>釜山宅 Busandaek 西面本店</td><td>多數資料為 17:00–24:00；熱門烤肉店，建議電話或 IG 預約。</td><td>主食，排晚餐；與松島/西面動線同一天最順。</td></tr>
-        <tr><td><span class="tag food">A 餐廳</span></td><td>廣安里 Udangtteok</td><td>資料有差異：RedTable 為 11:00–21:30；IG 顯示週二–週日 11:00–22:00、週一休。</td><td>安排週六或週二，避開週一較保險。</td></tr>
-        <tr><td><span class="tag food">A 咖啡</span></td><td>DIART Coffee 青沙浦</td><td>常見資料為 10:30–21:30。</td><td>適合接在膠囊列車青沙浦站附近。</td></tr>
-        <tr><td><span class="tag food">A 餐廳</span></td><td>本田豬肉湯飯 본전돼지국밥</td><td>資料約 09:00–20:30 / 08:30–21:30，建議以當天地圖為準。</td><td>主食，排午餐；靠近釜山站。</td></tr>
-        <tr><td><span class="tag sight">B 景點</span></td><td>Skyline Luge Busan</td><td>官方時間會依日期變動；目前常見約 10:00 開始，售票通常關閉前 30–45 分鐘停止。</td><td>較遠，建議一早從飯店搭計程車/Uber。</td></tr>
-        <tr><td><span class="tag sight">B 景點</span></td><td>海雲台膠囊列車 Sky Capsule</td><td>7–8 月約營業到 20:30；官方票券通常於 4 週前週二 07:00 開放。</td><td>一定要先搶票；建議青沙浦 → 尾浦方向。</td></tr>
-        <tr><td><span class="tag sight">B 景點</span></td><td>애니멀숲 ANIMAL SOOP</td><td>近期社群資訊顯示約 11:20–21:30 / 假日較長；建議當天確認。</td><td>離住宿近，當作廣安里半日活動。</td></tr>
-        <tr><td><span class="tag sight">B 景點</span></td><td>ClubD Oasis</td><td>官方表示每月可能不同；Klook 顯示一般平日 10:00–21:30、週末至 22:30，週二部分設施 18:00 關閉。</td><td>不要排 8/18 週二太晚；建議排 8/16 週日。</td></tr>
-        <tr><td><span class="tag sight">B 景點</span></td><td>釜山松島海上纜車</td><td>7–8 月 09:00–22:00，閉館前 30 分鐘停止售票。</td><td>與釜山站、本田豬肉湯飯、西面同一天。</td></tr>
-        <tr><td><span class="tag sight">B 景點</span></td><td>The Bay 101</td><td>Visit Korea 顯示 The Bay 101 約 08:00–24:00，店家各自不同。</td><td>晚上散步看夜景最佳。</td></tr>
+        <tr>
+          <td><span class="tag book">必訂</span>膠囊列車 Sky Capsule</td>
+          <td>2026/8/16（日）</td>
+          <td><strong>2026/7/14（二）韓國時間 07:00 開搶</strong><br><span class="muted">台灣時間約 06:00。這次開放的是 2026/8/10（一）– 8/16（日）這週票券。</span></td>
+          <td><a href="https://www.bluelinepark.com/eng/booking.do" target="_blank">Haeundae Blue Line Park 官方訂票</a><br>建議訂：Sky Capsule <strong>Mipo → Cheongsapo</strong>，下午時段。</td>
+        </tr>
+        <tr>
+          <td><span class="tag book">官網買</span>Skyline Luge Busan</td>
+          <td>2026/8/16（日）上午</td>
+          <td><strong>建議 2026/6 月中下旬後再買</strong><br><span class="muted">官網線上票有效期 90 天；不要太早買到接近過期。買官網票可用 QR code，不用現場排購票隊伍。</span></td>
+          <td><a href="https://busan.skylineluge.kr/en/book-now/" target="_blank">Skyline Luge Busan 官網購票</a><br><a href="https://busan.skylineluge.kr/en/pricing-packages/" target="_blank">票種與價格頁</a></td>
+        </tr>
+        <tr>
+          <td><span class="tag book">建議預約</span>All Sunday Bagel</td>
+          <td>2026/8/18（二）早餐</td>
+          <td>前一天或當天先查 CatchTable / 現場候位</td>
+          <td><a href="https://www.catchtable.net/shop/allsunday/info" target="_blank">All Sunday CatchTable 資訊頁</a><br>營業約 08:00–22:00，最後點餐約 21:30。</td>
+        </tr>
       </tbody>
     </table>
   </section>
 
   <section>
-    <h2>二、每日行程</h2>
+    <h2>二、地點資料整理</h2>
+    <table>
+      <thead><tr><th>類別</th><th>地點</th><th>營業 / 預約重點</th><th>安排位置</th></tr></thead>
+      <tbody>
+        <tr><td><span class="tag food">A 餐廳</span></td><td>Nasari Sigdang 廣安里</td><td>可查 CatchTable；適合晚餐。</td><td>Day 1 晚餐</td></tr>
+        <tr><td><span class="tag food">A 餐廳</span></td><td>廣安里 Udangtteok</td><td>資料顯示多為 11:00 後營業；建議避開週一。</td><td>Day 1 飯後小吃 / Day 4 備案</td></tr>
+        <tr><td><span class="tag food">A 餐廳</span></td><td>機張帝王蟹 / 機張蟹市場</td><td>機張蟹市場約 06:00–21:00；帝王蟹、雪蟹、海鰻等海鮮。</td><td>Day 2 Luge 後午餐</td></tr>
+        <tr><td><span class="tag food">A 咖啡</span></td><td>DIART Coffee 青沙浦</td><td>常見營業約 10:30–21:30。</td><td>Day 2 膠囊列車後</td></tr>
+        <tr><td><span class="tag food">A 早餐</span></td><td>All Sunday Bagel 廣安店</td><td>約 08:00–22:00；可透過 CatchTable 查資訊/候位。</td><td>Day 4 早餐</td></tr>
+        <tr><td><span class="tag food">A 餐廳</span></td><td>安木豬肉湯飯 안목 本店</td><td>11:00–21:00，最後點餐 20:30；全年無休，食材售罄可能提早打烊。</td><td>Day 3 午餐；離廣安里住宿較近</td></tr>
+        <tr><td><span class="tag food">A 餐廳</span></td><td>釜山宅 Busandaek 西面本店</td><td>多數資料為晚餐時段營業；熱門烤肉建議預約。</td><td>Day 3 晚餐</td></tr>
+        <tr><td><span class="tag sight">B 景點</span></td><td>Skyline Luge Busan</td><td>官網營業時間會變動；線上購票可使用 QR code。</td><td>Day 2 上午</td></tr>
+        <tr><td><span class="tag sight">B 景點</span></td><td>膠囊列車 Sky Capsule</td><td>官方每週二 07:00 開放 4 週後該週票券。</td><td>Day 2 下午</td></tr>
+        <tr><td><span class="tag sight">B 景點</span></td><td>애니멀숲 ANIMAL SOOP</td><td>小型室內動物咖啡/空間，出發前查 IG 或地圖最新營業。</td><td>Day 4 中午前</td></tr>
+        <tr><td><span class="tag sight">B 景點</span></td><td>ClubD Oasis</td><td>營業時間每月可能變動；本版依你的需求改排 8/18 下午。</td><td>Day 4 下午</td></tr>
+        <tr><td><span class="tag sight">B 景點</span></td><td>釜山松島海上纜車</td><td>7–8 月約 09:00–22:00，閉館前 30 分鐘停止售票。</td><td>Day 3 下午</td></tr>
+        <tr><td><span class="tag sight">B 景點</span></td><td>The Bay 101</td><td>晚上散步看夜景最適合。</td><td>Day 4 ClubD Oasis 後</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>三、每日行程 v2</h2>
 
     <div class="card day">
-      <h3>Day 1｜8/15（六）抵達釜山 → 廣安里輕鬆走</h3>
+      <h3>Day 1｜8/15（六）抵達釜山 → 廣安里晚餐</h3>
       <table>
-        <thead><tr><th>時間</th><th>安排</th><th>交通 / 時間</th><th>備註</th></tr></thead>
+        <thead><tr><th>時間</th><th>行程</th><th>交通 / 時間</th><th>備註</th></tr></thead>
         <tbody>
           <tr><td>15:30</td><td>抵達釜山機場</td><td>機場 → 住宿：約 45–70 分鐘</td><td>帶行李建議計程車/Uber。</td></tr>
-          <tr><td>17:00–17:40</td><td>抵達住宿、放行李</td><td>—</td><td>不要排太滿。</td></tr>
-          <tr><td>18:00–19:20</td><td><span class="tag food">A</span>Nasari Sigdang 晚餐</td><td>住宿 → 餐廳：約 5–15 分鐘</td><td>主食晚餐。</td></tr>
-          <tr><td>19:30–20:00</td><td><span class="tag food">A</span>廣安里 Udangtteok 小吃</td><td>餐廳 → Udangtteok：約 5–10 分鐘</td><td>當成飯後點心，若太飽可改 Day 4。</td></tr>
-          <tr><td>20:00–21:00</td><td>廣安里海邊散步 / 回住宿</td><td>步行或短程車</td><td>第一天以放鬆為主。</td></tr>
+          <tr><td>17:00–17:40</td><td>住宿放行李</td><td>—</td><td>第一天不要排太硬。</td></tr>
+          <tr><td>18:00–19:20</td><td><span class="tag food">A</span>Nasari Sigdang 晚餐</td><td>住宿周邊短程移動</td><td>主食晚餐。</td></tr>
+          <tr><td>19:30–20:00</td><td><span class="tag food">A</span>廣安里 Udangtteok 小吃</td><td>約 5–10 分鐘</td><td>若太飽，可改到 Day 4。</td></tr>
+          <tr><td>20:00 後</td><td>廣安里海邊散步</td><td>步行</td><td>看廣安大橋夜景。</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="card day">
-      <h3>Day 2｜8/16（日）東釜山：Luge → 青沙浦 → 膠囊列車 → ClubD Oasis → The Bay 101</h3>
+    <div class="card day blue">
+      <h3>Day 2｜8/16（日）Luge → 機張帝王蟹 → 膠囊列車 → DIART Coffee</h3>
       <table>
-        <thead><tr><th>時間</th><th>安排</th><th>交通 / 時間</th><th>備註</th></tr></thead>
+        <thead><tr><th>時間</th><th>行程</th><th>交通 / 時間</th><th>備註</th></tr></thead>
         <tbody>
-          <tr><td>08:45–09:40</td><td>住宿 → Skyline Luge Busan</td><td>計程車/Uber：約 40–55 分鐘；大眾運輸約 80–100 分鐘</td><td>這段最遠，建議直接搭車。</td></tr>
-          <tr><td>10:00–12:00</td><td><span class="tag sight">B</span>Skyline Luge Busan</td><td>—</td><td>戶外活動，記得防曬。</td></tr>
-          <tr><td>12:00–13:10</td><td><span class="tag open">新增空間</span>午餐：建議新增海雲台/青沙浦主食餐廳</td><td>Luge → 海雲台/青沙浦：約 25–35 分鐘</td><td>你目前清單裡這區沒有主食餐廳，所以先留空。</td></tr>
-          <tr><td>13:20–14:10</td><td><span class="tag food">A</span>DIART Coffee</td><td>青沙浦周邊步行/短程車</td><td>咖啡與休息。</td></tr>
-          <tr><td>14:30–15:00</td><td><span class="tag sight">B</span>膠囊列車：青沙浦 → 尾浦</td><td>單程約 30 分鐘</td><td>熱門，務必先訂票。</td></tr>
-          <tr><td>15:20–18:20</td><td><span class="tag sight">B</span>ClubD Oasis</td><td>尾浦/海雲台 → ClubD Oasis：約 5–10 分鐘</td><td>週日比週二適合，因週二可能提早關閉。</td></tr>
-          <tr><td>18:40–20:30</td><td><span class="tag sight">B</span>The Bay 101 晚上散步</td><td>ClubD Oasis → The Bay 101：約 10–20 分鐘</td><td>看夜景。晚餐可在 The Bay 101 或附近解決。</td></tr>
-          <tr><td>20:30–21:10</td><td>回住宿</td><td>The Bay 101 → 住宿：約 20–35 分鐘</td><td>今天比較滿，累了可提早回飯店。</td></tr>
+          <tr><td>08:35–09:30</td><td>住宿 → Skyline Luge Busan</td><td>計程車/Uber：約 40–55 分鐘</td><td>東釜山較遠，建議直接搭車。</td></tr>
+          <tr><td>10:00–11:30</td><td><span class="tag sight">B</span>Skyline Luge Busan</td><td>—</td><td>建議官網先買票，用 QR code 進場。</td></tr>
+          <tr><td>11:30–11:55</td><td>前往機張蟹市場 / 帝王蟹餐廳</td><td>Luge → 機張蟹市場：約 15–25 分鐘</td><td>這段順路，適合放在 Luge 後。</td></tr>
+          <tr><td>12:00–13:40</td><td><span class="tag food">A</span>機張帝王蟹午餐</td><td>—</td><td>主食午餐。海鮮用餐時間抓 90–100 分鐘比較穩。</td></tr>
+          <tr><td>13:40–14:25</td><td>機張 → 尾浦 Mipo 站</td><td>計程車/Uber：約 30–45 分鐘</td><td>為了讓 DIART 排在列車後，先到尾浦搭車。</td></tr>
+          <tr><td>15:00–15:30</td><td><span class="tag sight">B</span>膠囊列車：尾浦 Mipo → 青沙浦 Cheongsapo</td><td>單程約 30 分鐘</td><td>建議訂 15:00 左右，避免前面用餐/交通太趕。</td></tr>
+          <tr><td>15:40–16:40</td><td><span class="tag food">A</span>DIART Coffee</td><td>青沙浦站附近短程移動</td><td>已依你的要求排在坐完列車後。</td></tr>
+          <tr><td>16:40–18:00</td><td><span class="tag open">保留空間</span>青沙浦天空步道 / 回廣安里休息</td><td>依實際體力調整</td><td>今天已跑比較遠，不建議再塞太多。</td></tr>
+          <tr><td>18:30 後</td><td>廣安里晚餐自由安排</td><td>青沙浦 → 住宿：約 35–50 分鐘</td><td>可之後新增餐廳。</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="card day">
-      <h3>Day 3｜8/17（一）釜山站 → 松島纜車 → 西面烤肉</h3>
+    <div class="card day orange">
+      <h3>Day 3｜8/17（一）安木豬肉湯飯 → 松島纜車 → 西面烤肉</h3>
       <table>
-        <thead><tr><th>時間</th><th>安排</th><th>交通 / 時間</th><th>備註</th></tr></thead>
+        <thead><tr><th>時間</th><th>行程</th><th>交通 / 時間</th><th>備註</th></tr></thead>
         <tbody>
-          <tr><td>10:30–11:20</td><td>住宿 → 釜山站</td><td>計程車/Uber：約 25–40 分鐘；地鐵約 45–60 分鐘</td><td>可睡晚一點。</td></tr>
-          <tr><td>11:30–12:30</td><td><span class="tag food">A</span>本田豬肉湯飯午餐</td><td>釜山站附近步行</td><td>主食午餐。</td></tr>
-          <tr><td>13:00–15:30</td><td><span class="tag sight">B</span>釜山松島海上纜車</td><td>釜山站 → 松島：約 20–35 分鐘</td><td>夏季可營業到晚間，但白天視野比較清楚。</td></tr>
-          <tr><td>15:30–17:00</td><td><span class="tag open">新增空間</span>松島 / 南浦 / 甘川文化村擇一加入</td><td>依新增景點調整</td><td>這段就是預留給你加景點。</td></tr>
+          <tr><td>10:40–11:00</td><td>住宿 → 安木豬肉湯飯 本店</td><td>計程車/Uber：約 5–15 分鐘；步行視住宿位置約 15–25 分鐘</td><td>安木在南川洞，離廣安里住宿較近。</td></tr>
+          <tr><td>11:00–12:10</td><td><span class="tag food">A</span>安木豬肉湯飯午餐</td><td>—</td><td>主食午餐；建議 11:00 開門時段去，比較不用排太久。</td></tr>
+          <tr><td>12:10–13:00</td><td>安木 → 松島海上纜車</td><td>計程車/Uber：約 35–50 分鐘；大眾運輸約 70–90 分鐘</td><td>換成安木後，建議這段直接搭車。</td></tr>
+          <tr><td>13:00–15:30</td><td><span class="tag sight">B</span>釜山松島海上纜車</td><td>—</td><td>下午視野較好。</td></tr>
+          <tr><td>15:30–17:00</td><td><span class="tag open">新增景點空間</span>南浦 / 甘川文化村 / 白淺灘擇一</td><td>依新增景點調整</td><td>這段保留給你加景點。</td></tr>
           <tr><td>17:20–18:00</td><td>前往西面</td><td>松島 → 西面：約 35–50 分鐘</td><td>晚餐前移動。</td></tr>
-          <tr><td>18:00–19:30</td><td><span class="tag food">A</span>釜山宅 Busandaek 西面本店晚餐</td><td>西面站步行約 2–5 分鐘</td><td>主食晚餐；建議預約。</td></tr>
-          <tr><td>19:30–21:00</td><td>西面逛街 / 回住宿</td><td>西面 → 住宿：約 25–40 分鐘</td><td>看體力決定。</td></tr>
+          <tr><td>18:00–19:30</td><td><span class="tag food">A</span>釜山宅 Busandaek 西面本店晚餐</td><td>西面站附近</td><td>主食晚餐，建議預約。</td></tr>
+          <tr><td>19:30 後</td><td>西面逛街 / 回住宿</td><td>西面 → 住宿：約 25–40 分鐘</td><td>看體力決定。</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="card day">
-      <h3>Day 4｜8/18（二）廣安里緩衝日：Animal Soop + 可新增景點</h3>
+    <div class="card day blue">
+      <h3>Day 4｜8/18（二）All Sunday 早餐 → Animal Soop → ClubD Oasis → The Bay 101</h3>
       <table>
-        <thead><tr><th>時間</th><th>安排</th><th>交通 / 時間</th><th>備註</th></tr></thead>
+        <thead><tr><th>時間</th><th>行程</th><th>交通 / 時間</th><th>備註</th></tr></thead>
         <tbody>
-          <tr><td>10:30–12:00</td><td><span class="tag sight">B</span>애니멀숲 ANIMAL SOOP</td><td>住宿 → Animal Soop：約 5–15 分鐘</td><td>室內活動，適合夏天避暑。</td></tr>
-          <tr><td>12:10–13:10</td><td><span class="tag food">A</span>廣安里 Udangtteok 午餐/小吃</td><td>Animal Soop → Udangtteok：約 5–10 分鐘</td><td>若 Day 1 已吃過，這格改成新增餐廳。</td></tr>
-          <tr><td>13:30–17:30</td><td><span class="tag open">新增景點空間</span></td><td>依新增地點調整</td><td>建議放：海東龍宮寺、樂天 Outlet、Spa Land、甘川文化村等。</td></tr>
-          <tr><td>18:00–20:00</td><td>廣安里晚餐 / 海邊夜景</td><td>住宿周邊</td><td>輕鬆收尾，不建議排太遠。</td></tr>
+          <tr><td>08:30–09:40</td><td><span class="tag food">A</span>All Sunday Bagel 早餐</td><td>住宿 → All Sunday：約 5–15 分鐘</td><td>想要口味多，可改 10:30–11:30 當早午餐。</td></tr>
+          <tr><td>10:00–11:00</td><td>廣安里海邊散步 / 回住宿整理</td><td>步行</td><td>讓早上不要太趕。</td></tr>
+          <tr><td>11:20–12:40</td><td><span class="tag sight">B</span>애니멀숲 ANIMAL SOOP</td><td>廣安里周邊短程移動</td><td>室內活動，出發前看店家最新營業。</td></tr>
+          <tr><td>12:40–13:30</td><td>簡單午餐 / 前往海雲台</td><td>廣安里 → 海雲台：約 30–45 分鐘</td><td>ClubD 前不要吃太撐。</td></tr>
+          <tr><td>14:30–18:00</td><td><span class="tag sight">B</span>ClubD Oasis</td><td>—</td><td>已依你的要求改排 8/18 下午。</td></tr>
+          <tr><td>18:20–20:00</td><td><span class="tag sight">B</span>The Bay 101 晚上散步</td><td>ClubD Oasis → The Bay 101：約 10–20 分鐘</td><td>接夜景很順。</td></tr>
+          <tr><td>20:00 後</td><td>回住宿</td><td>The Bay 101 → 住宿：約 20–35 分鐘</td><td>最後一晚不要太晚。</td></tr>
         </tbody>
       </table>
     </div>
@@ -152,50 +196,58 @@
     <div class="card day">
       <h3>Day 5｜8/19（三）退房 / 回台灣</h3>
       <table>
-        <thead><tr><th>時間</th><th>安排</th><th>交通 / 時間</th><th>備註</th></tr></thead>
+        <thead><tr><th>時間</th><th>行程</th><th>交通 / 時間</th><th>備註</th></tr></thead>
         <tbody>
           <tr><td>上午</td><td>早餐、收行李、廣安里短暫散步</td><td>住宿周邊</td><td>依回程班機調整。</td></tr>
-          <tr><td>航班前 3 小時</td><td>住宿 → 金海機場</td><td>計程車/Uber：約 45–70 分鐘；大眾運輸約 70–90 分鐘</td><td>國際線建議抓寬一點。</td></tr>
+          <tr><td>航班前 3 小時</td><td>住宿 → 金海機場</td><td>計程車/Uber：約 45–70 分鐘；大眾運輸約 70–90 分鐘</td><td>國際線抓寬一點。</td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
   <section>
-    <h2>三、最需要先處理的預約</h2>
+    <h2>四、我對這次修改的判斷</h2>
     <div class="grid">
       <div class="card">
-        <h3>1. 膠囊列車</h3>
-        <p>最優先。建議訂 <strong>青沙浦 → 尾浦</strong>，接 DIART Coffee 和海雲台動線最順。</p>
+        <h3>機張帝王蟹順路嗎？</h3>
+        <p><strong>順路，可加入。</strong>理由是 Skyline Luge 在機張/Osiria 方向，機張蟹市場也在機張區域。放在 Luge 後午餐，比其他天特地從廣安里或西面跑過去更合理。</p>
       </div>
       <div class="card">
-        <h3>2. ClubD Oasis</h3>
-        <p>建議排 8/16（日），避開 8/18（二）可能部分設施提早關閉的風險。</p>
+        <h3>DIART Coffee 排列車後可行嗎？</h3>
+        <p><strong>可行，但膠囊列車方向要改。</strong>建議訂「尾浦 Mipo → 青沙浦 Cheongsapo」，下車後去 DIART Coffee 最順。</p>
       </div>
       <div class="card">
-        <h3>3. 釜山宅 Busandaek</h3>
-        <p>西面熱門烤肉晚餐，建議提前透過電話、IG 或現場方式確認。</p>
+        <h3>ClubD Oasis 8/18 下午可行嗎？</h3>
+        <p><strong>可以。</strong>但因週二部分設施可能較早結束，建議下午 14:30 左右入場，不要排太晚。</p>
       </div>
       <div class="card">
-        <h3>4. Skyline Luge Busan</h3>
-        <p>戶外活動受天氣影響，出發前一週再確認官方營業時間。</p>
+        <h3>All Sunday 早餐可行嗎？</h3>
+        <p><strong>可行。</strong>店家約 08:00 開始營業，放 Day 4 最順，因為那天上午在廣安里附近活動。</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>四、可新增景點欄位</h2>
+    <h2>五、可新增景點欄位</h2>
     <table>
       <thead><tr><th>新增地點</th><th>A 餐廳 / B 景點</th><th>推薦插入日</th><th>原因</th></tr></thead>
       <tbody>
-        <tr><td>＿＿＿＿＿＿＿＿</td><td>＿＿＿</td><td>Day 2 / Day 3 / Day 4</td><td>依地區調整，避免走回頭路。</td></tr>
-        <tr><td>＿＿＿＿＿＿＿＿</td><td>＿＿＿</td><td>Day 2 / Day 3 / Day 4</td><td>若在海雲台/青沙浦，放 Day 2；若在南浦/甘川，放 Day 3；若在廣安里，放 Day 4。</td></tr>
+        <tr><td>＿＿＿＿＿＿＿＿</td><td>＿＿＿</td><td>Day 2</td><td>若在機張、海雲台、青沙浦，放 Day 2。</td></tr>
+        <tr><td>＿＿＿＿＿＿＿＿</td><td>＿＿＿</td><td>Day 3</td><td>若在南浦、松島、甘川，放 Day 3；若在釜山站，也可放 Day 3 但動線會多一段。</td></tr>
+        <tr><td>＿＿＿＿＿＿＿＿</td><td>＿＿＿</td><td>Day 4</td><td>若在廣安里、海雲台室內設施，放 Day 4。</td></tr>
       </tbody>
     </table>
   </section>
 
+  <section>
+    <h2>六、資料來源</h2>
+    <p class="source">
+      Skyline Luge Busan 官方營業/票券頁、Haeundae Blue Line Park 官方訂票頁、KoreaToDo 機張蟹市場資料、CatchTable / 店家資訊、Visit Korea / Klook 相關營業資訊；安木豬肉湯飯依 Visit Korea 資料更新。出發前請再查一次官方或地圖最新狀態。
+    </p>
+  </section>
+
   <footer>
-    <p>版本：v1（依 2026/6 搜尋結果整理）。請於出發前再次確認營業時間、預約狀態與交通時間。</p>
+    <p>版本：v3｜更新：將豬肉湯飯改為安木豬肉湯飯，並調整 Day 3 動線。</p>
   </footer>
 </main>
 </body>
